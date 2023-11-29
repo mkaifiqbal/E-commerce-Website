@@ -1,0 +1,80 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="image/weblogo.png" width="300" height="90" alt="Sty-Kosmic Fashion"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a class="active" href="cart.html"><img src="image/cart.png" width="20" height="20"></a></li>
+
+            </ul>
+
+
+        </div>
+    </section>
+    <h1>Shopping Cart</h1>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <!--FOOTER-->
+
+    <div class="footer">
+        <div class="col1">
+            <h3>USEFUL LINKS</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="col2">
+            <h3>Daily Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required />
+                <br />
+                <button type="submit">Subcribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>H-23, New Friends Colony, BSK 3<br />New Delhi, Delhi, IN</p>
+
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>
+            Copyright &copy;2023; Designed by
+            <span class="thedesigner">Mohammad Kaif Iqbal</span>
+        </p>
+    </div>
+</body>
+
+</html>

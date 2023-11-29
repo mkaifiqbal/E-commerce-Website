@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="image/weblogo.png" width="300" height="90" alt="Sty-Kosmic Fashion"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html"><img src="image/cart.png" width="20" height="20"></a></li>
+
+            </ul>
+
+
+        </div>
+    </section>
+
+    <div class="product-details">
+        <!-- Product Image -->
+        <div class="product" id="product1">
+            <img class="image" src="image/winter/h1.jpg" alt="Alan Jones Clothing Men's Fleece Hooded Hoodie">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details-right">
+            <h2>Alan Jones Clothing Men's Fleece Hooded Hoodie</h2>
+
+            <!-- Price -->
+            <p class="price">₹749</p>
+
+            <!-- Size Selection Buttons -->
+            <div class="size-buttons">
+                <button class="size-button" onclick="selectSize(this)">S</button>
+                <button class="size-button" onclick="selectSize(this)">M</button>
+                <button class="size-button" onclick="selectSize(this)">L</button>
+                <button class="size-button" onclick="selectSize(this)">XL</button>
+                <button class="size-button" onclick="selectSize(this)">XXL</button>
+
+
+                <!-- Add more size buttons as needed -->
+            </div>
+
+            <!-- Buy Now and Add to Cart Buttons -->
+            <button class="add-to-cart"
+                onclick="addToCart('Alan Jones Clothing Men\'s Fleece Hooded Hoodie', 749,'image/winter/h1.jpg')">Add
+                to Cart</button>
+            <button class="buy-now">Buy Now</button>
+
+            <!-- Product Details Section -->
+            <div class="more-details">
+                <h3>Product Details</h3>
+                <div class="description">
+                    <p>
+                        Material Composition: 60% Cotton, 40% Polyester <br>
+                        Sleeve Type: Long Sleeve <br>
+                        Material Type: Polycotton <br>
+                        Fit Type: Regular <br>
+                        Length: Standard Length <br>
+                        Neck Style: Hooded Neck <br>
+                        Country of Origin: India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 style="margin-left: 110px; margin-top: 80px;">Men Winter Collection New Morden Design</h2>
+
+    <section id="product1" class="section-p1">
+        <div class="product-container">
+            <!-- Product 1 -->
+            <a href="productinfo5.html" class="product-link">
+                <div class="product">
+                    <img src="image/winter/h5.jpg" alt="Product 5">
+                    <span>The Modern Soul</span>
+                    <h3>The Modern Soul Avenger</h3>
+                    <p class="price">₹697</p>
+                </div>
+            </a>
+
+            <!-- Product 2 -->
+
+            <a href="productinfo3.html" class="product-link">
+                <div class="product">
+                    <img src="image/winter/h2.jpg" alt="Product 1">
+                    <span>I613</span>
+                    <h3>Hoodies Autumn Winter </h3>
+                    <p class="price">₹899</p>
+                </div>
+            </a>
+            <!-- Product 3 -->
+
+            <a href="productinfo2.html" class="product-link">
+                <div class="product">
+                    <img src="image/winter/h3.jpg" alt="Product 2">
+                    <span>Printed</span>
+                    <h3>Cotton Hooded Neck</h3>
+                    <p class="price">₹399</p>
+                </div>
+            </a>
+
+            <a href="productinfo4.html" class="product-link">
+                <div class="product">
+                    <img src="image/winter/h4.jpg" alt="Tabadtod Trendy GROPR Milk Tea Printed Men's Hoodies">
+                    <span>Tabadtod</span>
+                    <h3>Tabadtod Trendy GROPR </h3>
+                    <p class="price">₹699</p>
+                </div>
+            </a>
+    </section>
+    <!--FOOTER-->
+
+    <div class="footer">
+        <div class="col1">
+            <h3>USEFUL LINKS</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="col2">
+            <h3>Daily Updates</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required />
+                <br />
+                <button type="submit">Subcribe Now</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>H-23, New Friends Colony, BSK 3<br />New Delhi, Delhi, IN</p>
+
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>
+            Copyright &copy;2023; Designed by
+            <span class="thedesigner">Mohammad Kaif Iqbal</span>
+        </p>
+    </div>
+</body>
+
+</html>

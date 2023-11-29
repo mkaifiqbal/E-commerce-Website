@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+
+    background: #f8f8f8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #007f77;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3s ease;
+
+}
+
+
+.product-details {
+    display: flex;
+    max-width: 1300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    flex: 1;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.product-details-right {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.size-buttons {
+    margin-bottom: 15px;
+}
+
+.size-button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 15px;
+
+}
+
+.size-button:hover,
+.size-button.selected {
+    background-color: #007f77;
+    color: #fff;
+    border: 1px solid #007f77;
+}
+
+.buy-now,
+.add-to-cart {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007f76;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.buy-now {
+    margin-left: 30px;
+}
+
+.more-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.more-details h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.bullet-points {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    flex: 0 0 calc(25% - 20px);
+    /* 4 products in each row with some margin */
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #007f77;
+    font-weight: bold;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    margin-top: 100px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #077b73bb;
+    color: #000;
+    display: flex;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col1 a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    border-radius: 100%;
+    background: transparent;
+
+
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+
+.footerBottom {
+    background-color: #044a46;
+    padding: 20px;
+    text-align: center;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+/*-- Footer  close --*/

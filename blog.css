@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+/* nav */
+#header {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+
+    background: #f8f8f8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #007f77;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3s ease;
+
+}
+
+#topofarticle {
+    text-align: center;
+    padding: 20px;
+    background-color: #007f77;
+    color: #fff;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content img {
+    margin-left: 30%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    color: #007f77;
+}
+
+.footer {
+    margin-top: 100px;
+    width: 70%;
+    padding: 100px 15%;
+    background: #077b73bb;
+    color: #000;
+    display: flex;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col1 a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    border-radius: 100%;
+    background: transparent;
+
+
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+
+.footerBottom {
+    background-color: #044a46;
+    padding: 20px;
+    text-align: center;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+/*-- Footer  close --*/
